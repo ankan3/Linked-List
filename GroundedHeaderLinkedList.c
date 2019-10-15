@@ -18,13 +18,7 @@ int main()
   int option;
   do
   {
-   printf("\n\n -----Main Menu-----");
-   printf("\n 1. Create a list");
-   printf("\n 2. Display the list");
-   printf("\n 3. Exit");
-   printf("\n Enter your choice : ");
-   scanf("%d", &option);
-   switch(option)
+ 
    {
     case 1:
       create();
@@ -46,28 +40,7 @@ void create()
   printf("\n Enter -1 to end");
   printf("\n Enter the data :");
   scanf("%d", &num);
-  while(num != -1)
-  {
-    new_node = (struct node*)malloc(sizeof(struct node));
-    new_node -> data = num;
-    new_node -> next = NULL;
-
-    if(head == NULL)
-    {      
-      //hn represents the header node
-      hn = (struct node*)malloc(sizeof(struct node));
-      head = hn;
-      hn -> next = new_node;
-    }
-    else
-    {
-      for(ptr = head -> next; ptr -> next != NULL; ptr = ptr -> next);        
-      ptr -> next = new_node;
-    }
-    printf("\n Enter the data :");
-    scanf("%d", &num);
-   }
-}
+ 
 
 //Create the Grounded Header Link List
 void display()
