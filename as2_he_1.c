@@ -142,16 +142,9 @@ void main()
 		scanf("%d",&data);
 		insertlast(data);
 	}
-	printf("list are\n");
-	printNode();
-	printf("enter elements to be searched\n");
-	scanf("%d",&s);
-	search(s);
-	printf("list is\n");
-	printNode();
+	
 
-
-	/*insertlast(1);
+insertlast(1);
 	insertlast(2);
 	insertlast(3);
 	insertlast(4);
@@ -162,6 +155,7 @@ void main()
 	search(6);
 	//deleteLast();
 	printf("after serch\n");
-	printNode();*/
+	printNode();
+	
 
 }
