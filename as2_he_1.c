@@ -6,17 +6,7 @@ struct node
 	struct node *next;
 
 };
-struct node *head = NULL;
-void insertlast(int item)
-{
-	struct node *new = (struct node*) malloc(sizeof(struct node));
-	new->data =item;
-	new->next = NULL;
-	struct node *temp = head;
-	if (head == NULL)
-	{
-		head = new;
-		return;
+
 		/* code */
 	}
 
