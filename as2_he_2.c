@@ -5,26 +5,6 @@ struct node
 	int data;
 	struct node *next;
 };
-void insertlast(int item)
-{
-	struct node *new = (struct node*) malloc(sizeof(struct node));
-	new->data =item;
-	new->next = NULL;
-	struct node *temp = head;
-	if (head == NULL)
-	{
-		head = new;
-		return;
-		/* code */
-	}
-
-	while(temp->next != NULL)
-	{
-		temp = temp->next;
-	}
-
-	temp->next = new;
-}
 
 int occurence(int data)
 {
